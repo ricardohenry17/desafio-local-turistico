@@ -1,0 +1,132 @@
+/* Reset básico e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Seção Hero (Cabeçalho com Imagem de Fundo) */
+.hero {
+    /* Usando background-image e background-size */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+/* Botão Estilizado */
+.btn {
+    display: inline-block;
+    background-color: #0077b6;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #023e8a;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    color: #023e8a;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+}
+
+/* Grade de Cards (Layout Flexbox) */
+.cards-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilização individual de cada Card (Aplicando o Box Model) */
+.card {
+    background: #ffffff;
+    width: 330px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem se ajuste bem sem distorcer */
+}
+
+.card-body {
+    padding: 20px; /* Padding interno separando o conteúdo da borda do card */
+}
+
+.card-body h3 {
+    font-size: 1.4rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #023e8a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
